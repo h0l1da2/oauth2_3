@@ -44,6 +44,4 @@ public class AuthServerConfigA extends AuthorizationServerConfigurerAdapter {
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
         security.checkTokenAccess("isAuthenticated()"); //check_token 엔드포인트 호출 조건(인증이 되었는가?)
     }
-
-
 }
